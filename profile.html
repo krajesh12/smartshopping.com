@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <!-- Glide js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.css">
+    <!-- Custom StyleSheet -->
+   <link rel="stylesheet" href="css/styles.css" />
+   <link rel="stylesheet" href="css/profile.css">
+    <title>Smart Shopping</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="icon" href="image/company_logo_2-removebg-preview.png" type="image/x-icon">
+
+</head>
+
+<body class="bodymain">
+
+    <div class="navigation navigation-profile">
+        <div class="nav-center container d-flex">
+            <a href="/" class="logo1"><img src="image/company_logo_2-removebg-preview.png" alt="logo"></a>
+            <!-- <a href="/" class="logo">
+          <h1><span class="sone"> S</span>mart <span class="stwo">S</span>hopping</h1>
+        </a> -->
+            <div>
+                <select name="Select Location" class="location locationprofile">
+                    <option value="0" selected>Select Location</option>
+                    <option value="5">Madanapalli</option>
+                    <option value="4">Tirupati</option>
+                    <option value="3">Chittoor</option>
+                    <option value="2">Pileru</option>
+                </select>
+            </div>
+
+
+
+            <div class="search-container search-containerprofile">
+                <input type="text" placeholder="Search shop names.............." onclick="product11()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+
+
+            <div class="sidebar sidebartwo">
+                <ul class="nav-list d-flex nav-listprofile">
+                    <li class="nav-item nav-itemprofile">
+                        <a href="index.html" class="icon">Home</a>
+                    </li>
+                    <li class="nav-item nav-itemprofile"><a href="cart.html" class="icon">
+                            <i class="bx bx-cart">Cart</i>
+                        </a></li>
+
+                </ul>
+            </div>
+        </div>
+
+
+        <div id="sidebar1">
+            <hr>
+            <ul class="nav-list1 d-flex">
+                <li class="nav-item1">
+                    <a href="index.html" class="icon1"><i class="fa-solid fa-shop"></i> Home</a>
+                </li>
+                <li class="nav-item1">
+                    <a class="icon1"><i class="fa-solid fa-shop"></i> Shops</a>
+                </li>
+                <li class="nav-item1">
+                    <a href="profile.html" class="icon1"><i class="bx bx-user"></i>Account</a>
+                </li>
+                <li class="nav-item1"><a class="icon1"><i class="fa-solid fa-list"></i>Categories</a></li>
+                <li class="nav-item1">
+                    <a href="cart.html" class="icon1">
+                        <i class="bx bx-cart"></i>Cart
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- close the navigation -->
+
+
+
+    <!-- main page -->
+<div class="profile-page">
+    <div class="profile-pic">
+        <img src="../image/profile.png" alt="" id="profileimg">
+        <h1 class="name"><button>Login</button></h1>
+        <label for="fileupload" class="filelabel">UpdateImage</label>
+        <input type="file" accept="image/jpeg, image/jpg, image/png" id="fileupload">
+       <button id="profilebtn">Edit-Profile</button>
+    </div>
+</div>
+
+<div id="profilemenu">
+    <div class="profilemenu1">
+        <div class="profilemenuchild"><i class="fa-solid fa-bag-shopping"></i>Orders</div>
+        <div class="profilemenuchild"><i class="fa-solid fa-truck"></i>Deliverys</div>
+        <div class="profilemenuchild"><i class="fa-regular fa-user"></i>profile</div>
+        <div class="profilemenuchild"><i class="fa-solid fa-phone"></i>Customer-support</div>
+        <div class="profilemenuchild"><i class="fa-solid fa-wallet"></i>Wallet</div>
+        <div class="profilemenuchild"><i class="fa-regular fa-address-book"></i>Orders-Contact</div>
+        <div class="profilelogoutdiv"><button class="profilelogout">Logout</button></div>
+    </div>
+    <div class="profilemenu2">
+        <div class="profilemenuchild2">
+            <img src="image/logo1-removebg-preview.png" alt="">
+            <span class="profilecart">0</span>
+            <h1>No Orders Yet</h1>
+            <button class="profilebrowsebtn">Browse Shops</button>
+        </div>
+        <div class="profilemenuchild3">
+          <a href="index.html">  <img src="image/empty1.png" alt=""></a>
+        </div>
+    </div>
+</div>
+<br><br><br><br><br><br>
+
+
+
+
+<script src="javascipt/productcart.js"></script>
+
+</body>
+
+</html>

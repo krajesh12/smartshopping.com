@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced E-commerce Cart</title>
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+
+<body>
+    <div class="cart-container">
+        <h1 class="cart-title">Shopping Cart</h1>
+
+        <div class="cart-header">
+            <p>Product</p>
+            <p>Price</p>
+            <p>Quantity</p>
+            <p>Total</p>
+        </div>
+
+        <!-- Cart Items -->
+        <div class="cart-item">
+            <div class="product-info">
+                <img src="https://via.placeholder.com/80" alt="Product Image" class="product-img">
+                <p class="product-name">Product 1</p>
+            </div>
+            <p class="product-price">$29.99</p>
+            <div class="quantity-control">
+                <button class="quantity-btn decrease">-</button>
+                <input type="text" value="1" class="quantity-input">
+                <button class="quantity-btn increase">+</button>
+            </div>
+            <p class="product-total">$29.99</p>
+        </div>
+
+        <div class="cart-item">
+            <div class="product-info">
+                <img src="https://via.placeholder.com/80" alt="Product Image" class="product-img">
+                <p class="product-name">Product 2</p>
+            </div>
+            <p class="product-price">$45.99</p>
+            <div class="quantity-control">
+                <button class="quantity-btn decrease">-</button>
+                <input type="text" value="1" class="quantity-input">
+                <button class="quantity-btn increase">+</button>
+            </div>
+            <p class="product-total">$45.99</p>
+        </div>
+
+        <!-- Cart Total -->
+        <div class="cart-total">
+            <p>Total Amount: <span class="total-amount">$75.98</span></p>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,390 @@
+
+
+
+/* General Styles */
+.main-body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.main-container {
+    width: 100%;
+    padding: 20px;
+}
+
+/* Navigation Bar */
+/* .navigation-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    height: 60px;
+    width: 100%;
+    z-index: 1000;
+    padding: 0 20px;
+} */
+ .location {
+     height: 40px;
+     width: 200px;
+     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.692));
+     border: none;
+     color: black;
+     border-radius: 5px;
+     position: absolute;
+     left: 100px;
+     bottom: 10px;
+     border-radius: 5px;
+     cursor: pointer;
+     border: 1px solid rgba(0, 0, 0, 0.15);
+
+ }
+
+
+#shopprofilelogo {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    position: relative;
+    right: 20px;
+    bottom: 0px;
+}
+
+.filter-option {
+    position: relative;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 8px 15px;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+}
+
+.dropdown-menu {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+    width: 160px;
+}
+
+.dropdown-list li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dropdown-list li:hover {
+    background-color: #e0e0e0;
+}
+
+.filter-option:hover .dropdown-list {
+    display: block;
+}
+
+/* Shop Owner Profile */
+.shopownerimg img {
+    border: 3px solid goldenrod;
+    height: 100%;
+    width: 100%;
+    max-height: 400px;
+    max-width: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    position: relative;
+    top: 80px;
+}
+
+.shopownerimg img:hover {
+    transform: scale(1.05);
+}
+
+.shopowner1 {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 20px;
+    align-items: start;
+    padding: 20px;
+}
+
+.shopprofiledetail {
+    position: relative;
+    padding: 20px;
+    top: 100px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.shopprofiledetail p {
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.shopownerimg p {
+    font-size: 18px;
+    color: #333;
+}
+
+.shopownerimg p span,
+.shopprofiledetail p span {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .shopowner1 {
+        grid-template-columns: 1fr;
+    }
+
+    .navigation-bar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .filter-option {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    #shopprofilelogo {
+        height: 60px;
+        width: 60px;
+    }
+
+    .navigation-bar {
+        padding: 10px;
+    }
+
+    .dropdown-list {
+        width: 100%;
+    }
+
+    .shopownerimg img {
+        max-height: 300px;
+        max-width: 300px;
+    }
+
+    .shopprofiledetail p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navigation-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filter-option {
+        width: 100%;
+    }
+
+    .shopownerimg img {
+        max-height: 250px;
+        max-width: 250px;
+    }
+
+    .shopprofiledetail p {
+        font-size: 14px;
+    }
+}
+   .product-grid {
+       display: grid;
+       grid-template-columns: repeat(4, 1fr);
+       gap: 20px;
+       padding: 20px;
+       margin: 0 auto;
+       max-width: 1200px;
+       position: relative;
+       top: 100px;
+   }
+
+   .product-card {
+       border: 1px solid rgba(0, 0, 0, 0.1);
+       border-radius: 10px;
+       overflow: hidden;
+       background-color: #fff;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+       transition: transform 0.3s, box-shadow 0.3s;
+
+   }
+
+   .product-card img {
+       width: 100%;
+       height: auto;
+       display: block;
+       object-fit: cover;
+
+   }
+
+   .product-card:hover {
+       transform: translateY(-5px);
+       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+   }
+
+   .categories {
+       padding: 20px;
+       height: auto;
+   }
+
+   .header {
+       text-align: center;
+       position: relative;
+       top: 100px;
+   }
+
+   .header h1 {
+       font-size: 28px;
+       margin: 0;
+       color: #333;
+   }
+
+   .description {
+       padding: 10px;
+       font-size: 14px;
+ 
+   }
+
+   @media (max-width: 1200px) {
+       .product-grid {
+           grid-template-columns: repeat(3, 1fr);
+       }
+   }
+
+   @media (max-width: 800px) {
+       .product-grid {
+           grid-template-columns: repeat(2, 1fr);
+       }
+   }
+
+   @media (max-width: 500px) {
+       .product-grid {
+           grid-template-columns: 1fr;
+       }
+   }
+
+
+  
+
+   .container1 {
+       width: 90%;
+       max-width: 900px;
+       margin: 0 auto;
+       background-color: #fff;
+       padding: 20px;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+       border-radius: 8px;
+   }
+
+   h2,
+   p {
+       text-align: center;
+       margin-bottom: 20px;
+   }
+
+   .form-wrapper {
+       display: flex;
+       flex-wrap: wrap;
+       gap: 20px;
+       justify-content: space-between;
+   }
+
+   .form-section {
+       width: 48%;
+       background-color: #f0f0f0;
+       padding: 20px;
+       border-radius: 8px;
+       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   }
+
+   h3 {
+       margin-bottom: 15px;
+       color: #333;
+   }
+
+   .registration-form .form-group {
+       margin-bottom: 15px;
+       position: relative;
+   }
+
+   .registration-form .form-group label {
+       display: block;
+       margin-bottom: 5px;
+       color: #555;
+       transition: all 0.3s;
+       font-weight: 500;
+   }
+
+   .registration-form .form-group input,
+   .registration-form .form-group select {
+       width: 100%;
+       padding: 10px;
+       border: 1px solid #ccc;
+       border-radius: 4px;
+       transition: border-color 0.3s, box-shadow 0.3s;
+   }
+
+   .registration-form .form-group input:focus,
+   .registration-form .form-group select:focus {
+       border-color: #007BFF;
+       box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+   }
+
+   .registration-form .form-group input:focus+label,
+   .registration-form .form-group select:focus+label,
+   .registration-form .form-group input:not(:placeholder-shown)+label,
+   .registration-form .form-group select:not(:placeholder-shown)+label {
+       top: -10px;
+       left: 10px;
+       background-color: #fff;
+       padding: 0 5px;
+       font-size: 12px;
+       color: #007BFF;
+   }
+
+   .submit-btn {
+       width: 100%;
+       padding: 15px;
+       background-color: #007BFF;
+       color: #fff;
+       border: none;
+       border-radius: 4px;
+       cursor: pointer;
+       transition: background-color 0.3s, transform 0.3s;
+       margin-top: 20px;
+   }
+
+   .submit-btn:hover {
+       background-color: #0056b3;
+       transform: translateY(-2px);
+   }
+
+   /* Responsive Design */
+   @media (max-width: 768px) {
+       .form-section {
+           width: 100%;
+       }
+   }

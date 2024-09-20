@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <!-- Glide js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.css">
+    <!-- Custom StyleSheet -->
+     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/shopreg.css" />
+    <title>Smart Shopping</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="icon" href="image/logo1.jpg" type="image/x-icon">
+
+</head>
+
+<body class="bodymain">
+
+    <div class="navigation navigationprofile">
+        <div class="nav-center container d-flex">
+            <a href="/" class="logo1 newlogo"><img src="image/company_logo_2-removebg-preview.png" alt="logo"></a>
+          <a href="/" class="logo2">Smart Shopping</a>
+          <a href="/" class="help">Need Hep? call +91 7674962640</a>
+          <img src="image/profile.png" class="shopregister">
+        </div>
+    </div>
+
+
+<div class="shopsregfrontpage">
+
+    <div class="shopsregistermain">
+        <div class="shopregisterhead">
+            <p class="shopregisterhead1">Partner with the Smart Shopping app to start selling online</p>
+            <p class="shopregisterhead2">New shops get 0% commission for the first month</p>
+            <button id="shopsregisterbtn1">Register Your Shop</button>
+        </div>
+    </div>
+    <div class="shopregisterlast">
+        <p>Start now - it only takes 10 minutes. Have these ready for a quick and easy registration.</p>
+        <p>Requirements</p>
+        <div class="shopsrequirements">
+            <div class="shopsreqitem1">
+                <p><i class="fa-regular fa-circle-check"></i>Pan card</p>
+                <p><i class="fa-regular fa-circle-check"></i>Shop Images(profile or BannerImage)</p>
+                <p><i class="fa-regular fa-circle-check"></i>Location Proof(Aadharcard)</p>
+                <p><i class="fa-regular fa-circle-check"></i>Bank Details</p>
+            </div>
+            <div class="shopsreqitem2">
+                <p><i class="fa-regular fa-circle-check"></i>Instagram profile url (Not Mandatory)</p>
+                <p><i class="fa-regular fa-circle-check"></i>Shop Type (Clothes , mobiles ,electronics Only)</p>
+                <p><i class="fa-regular fa-circle-check"></i>Owner Details</p>
+                <p><i class="fa-regular fa-circle-check"></i>owner image</p>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+</div>
+
+
+    <div class="shopsregh1">
+        <div id="shopreghead11">
+            <h1>Shop Registration Form</h1>
+        </div>
+        <div class="shopsregicon"><i class="fa-solid fa-xmark"></i></div>
+        <div class="container76">
+            <h2 class="header76">Start Now - It Only Takes 10 Minutes</h2>
+            <p class="info-text76">Have these ready for a quick and easy registration.</p>
+    
+            <div class="form-wrapper76">
+                <!-- Personal Details Section -->
+                <div class="form-section76 personal-details76">
+                    <h3 class="section-header76">Personal Details</h3>
+                    <form class="registration-form76">
+                        <div class="form-group76">
+                            <input type="text" id="owner-name" name="owner-name" required class="form-input76"
+                                placeholder=" ">
+                            <label for="owner-name" class="form-label76">Owner Name</label>
+                        </div>
+                        <div class="form-group76">
+                            <input type="tel" id="owner-contact" name="owner-contact" required class="form-input76"
+                                placeholder=" ">
+                            <label for="owner-contact" class="form-label76">Owner Contact</label>
+                        </div>
+                        <div class="form-group76">
+                            <input type="url" id="instagram-url" name="instagram-url" class="form-input76" placeholder=" ">
+                            <label for="instagram-url" class="form-label76">Instagram Profile URL (Optional)</label>
+                        </div>
+                        <div class="form-group76">
+                            <select id="shop-type" name="shop-type" required class="form-select76">
+                                <option value="" disabled selected>Select Shop Type</option>
+                                <option value="clothes">Clothes</option>
+                                <option value="mobiles">Mobiles</option>
+                                <option value="electronics">Electronics</option>
+                            </select>
+                            <label for="shop-type" class="form-label76">Shop Type</label>
+                        </div>
+                    </form>
+                </div>
+    
+                <!-- Shop Information & Documents Section -->
+                <div class="form-section76 shop-info76">
+                    <h3 class="section-header76">Shop Information & Documents</h3>
+                    <form class="registration-form76">
+                        <div class="form-group76">
+                            <input type="text" id="pan-card" name="pan-card" required class="form-input76" placeholder=" ">
+                            <label for="pan-card" class="form-label76">PAN Card</label>
+                        </div>
+                        <div class="form-group76">
+                            <input type="file" id="location-proof" name="location-proof" accept="image/*" required
+                                class="form-input76">
+                            <label for="location-proof" class="form-label76">Location Proof (Aadhar Card)</label>
+                        </div>
+                        <div class="form-group76">
+                            <input type="file" id="shop-image" name="shop-image" accept="image/*" required
+                                class="form-input76">
+                            <label for="shop-image" class="form-label76">Shop Image (Profile or Banner)</label>
+                        </div>
+                        <div class="form-group76">
+                            <input type="file" id="owner-image" name="owner-image" accept="image/*" required
+                                class="form-input76">
+                            <label for="owner-image" class="form-label76">Owner Image</label>
+                        </div>
+                        <div class="form-group76">
+                            <input type="text" id="bank-details" name="bank-details" required class="form-input76"
+                                placeholder=" ">
+                            <label for="bank-details" class="form-label76">Bank Details</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    
+            <button type="submit" class="submit-btn76">Register</button>
+        </div>
+    </div>
+
+
+
+
+
+
+        <div id="sidebar1">
+            <hr>
+            <ul class="nav-list1 d-flex">
+                <li class="nav-item1">
+                    <a href="index.html" class="icon1"><i class="fa-solid fa-shop"></i> Home</a>
+                </li>
+                <li class="nav-item1">
+                    <a class="icon1"><i class="fa-solid fa-shop"></i> Shops</a>
+                </li>
+                <li class="nav-item1">
+                    <a href="profile.html" class="icon1"><i class="bx bx-user"></i>Account</a>
+                </li>
+                <li class="nav-item1"><a class="icon1"><i class="fa-solid fa-list"></i>Categories</a></li>
+                <li class="nav-item1">
+                    <a href="cart.html" class="icon1">
+                        <i class="bx bx-cart"></i>Cart
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- close the navigation -->
+
+
+
+
+
+
+
+<script src="javascipt/shopregscript.js"></script>
+
+</body>
+
+</html>

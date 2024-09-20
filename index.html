@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <!-- Glide js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.css">
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Smart Shopping</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="icon" href="image/company_logo_2-removebg-preview.png" type="image/x-icon">
+
+</head>
+
+<body class="bodymain">
+    <div class="navigation">
+        <div class="nav-center container d-flex">
+            <a href="/" class="logo1"><img src="image/company_logo_2-removebg-preview.png" alt="logo"></a>
+            <div class="locationmain">
+                <select name="Select Location" id="location">
+                    <option value="0" selected>Select Location</option>
+                    <option value="5">Madanapalli</option>
+                    <option value="4">Tirupati</option>
+                    <option value="3">Chittoor</option>
+                    <option value="2">Pileru</option>
+                </select>
+            </div>
+
+
+           <div class="mainsearch-container">
+            <div class="search-container">
+                <div class="search-input">
+                <input type="text" placeholder="Search shop names.............." autocomplete="off" class="search-box">
+                <button class="searchbtn22"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+            <div class="result-box">
+                
+            </div>
+            </div>
+
+
+
+            <div class="sidebar">
+                <ul class="nav-list d-flex">
+                    <li class="nav-item">
+                        <a href="index.html" class="icon">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="icon" href="shopsregister.html"><i class="fa-solid fa-shop"></i> Shops</a>
+                        <!-- Dropdown for Shops -->
+                    </li>
+                    <li class="nav-item">
+                        <a href="profile.html" class="icon"><i class="bx bx-user"></i> Profile</a>
+                        <!-- Dropdown for Profile -->
+                    </li>
+                    <li class="nav-item"><a href="cart.html" class="icon">
+                        <i class="fa-solid fa-cart-shopping"></i> <span class="inc-cart">0</span>
+                        </a></li>
+
+                </ul>
+            </div>
+        </div>
+
+
+        <div id="sidebar1">
+            <hr>
+            <ul class="nav-list1 d-flex">
+                <li class="nav-item1">
+                    <a href="index.html" class="icon1"><i class="fa-solid fa-shop"></i> Home</a>
+                </li>
+                <li class="nav-item1">
+                    <a class="icon1" href="shopprofile.html"><i class="fa-solid fa-shop"></i> Shops</a>
+                </li>
+                <li class="nav-item1">
+                    <a href="profile.html" class="icon1"><i class="bx bx-user"></i>Account</a>
+                </li>
+                <li class="nav-item1"><a class="icon1"><i class="fa-solid fa-list"></i>Categories</a></li>
+                <li class="nav-item1">
+                    <a href="cart.html" class="icon1">
+                        <i class="bx bx-cart"></i>Cart
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- close the navigation -->
+
+
+
+
+
+
+    <!-- part 1 scrolling -->
+ <div class="adsmainblock">
+    <div class="ads2arrows">
+        <div class="leftarrow"> <i class="fa-solid fa-arrow-left"></i></div>
+        <div class="rightarrow"> <i class="fa-solid fa-arrow-right"></i></div>
+    </div>
+    <div class="adsmain">
+        <div class="adsmainchild">
+            <div class="adsmainchildtext">
+                <h2>Smart Shopping</h2>
+                <h1>Select your favorite store for online shopping</h1>
+                <button class="adsmainchildbtn" onclick="movenext()">Explore Now</button>
+            </div>
+            <div >
+                <img src="image/store2.png" alt="" class="adsmainimg1">
+                <img src="image/store3.png" alt="" class="adsmainimg2">
+            </div>
+        </div>
+    </div>
+ </div>
+
+
+
+    <!-- additonal part added -->
+    <div class="updatedads">
+        <div class="updatednames">
+            <h1> Samsung Galaxy Z Flip5</h1>
+        </div>
+        <div class="updateadsblock">
+            <div class="updatedadsblock1"><img src="image/diwali1.jpg" alt="" id="updatedadsblockimg"></div>
+            <div class="updatedadsblock1"><img src="image/diwali2.jpg" alt="" id="updatedadsblockimg"></div>
+            <div class="updatedadsblock1"><img src="image/diwali3.jpg" alt="" id="updatedadsblockimg"></div>
+            <div class="updatedadsblock1"><img src="image/diwali4.jpg" alt="" id="updatedadsblockimg"></div>
+            <div class="updatedadsblock1"><img src="image/diwali5.jpg" alt="" id="updatedadsblockimg"></div>
+            <div class="updatedadsblock1"><img src="image/diwali3.jpg" alt="" id="updatedadsblockimg"></div>
+        </div>
+
+    </div>
+    <!-- close part one -->
+
+    <!-- part two  -->
+
+    <div class="hero">
+        <div class="heroarrow">
+            <div class="best">Best Shops</div>
+            <div class="leftarrow1"> <i class="fa-solid fa-arrow-left"></i></div>
+            <div class="rightarrow1"> <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="shops">
+            <div class="shop1"><a href="shopprofile.html"><img src="image/mobilenew1.jpg"></a>
+                <p class="shopdis"><b>Fezi clothes Mens shop</b> <br> Location:Tirupati <br> <i
+                        class="fa-regular fa-star"></i>Rating 4.5+ <br> Time:25-30mins</p>
+            </div>
+            <div class="shop1"><a href="shopprofile.html"><img src="image/food1.jpg"></a>
+                <p class="shopdis"><b>Fezi clothes Mens shop</b> <br> Location:Tirupati <br> <i
+                        class="fa-regular fa-star"></i>Rating 4.5+ <br> Time:25-30 mins </p>
+            </div>
+            <div class="shop1"><a href="shopprofile.html"><img src="image/clothes1.jpg"></a>
+                <p class="shopdis"><b>Fezi clothes Mens shop </b><br> Location:Tirupati <br> <i
+                        class="fa-regular fa-star"></i>Rating 4.5+ <br> Time:25-30 mins</p>
+            </div>
+            <div class="shop1"><a href="shopprofile.html"><img src="image/clothes4.jpg"></a>
+                <p class="shopdis"><b>Fezi clothes Mens shop </b><br> Location:Tirupati <br> <i
+                        class="fa-regular fa-star"></i>Rating 4.5+ <br> Time:25-30 mins</p>
+            </div>
+            <div class="shop1"><a href="/"><img src="image/food2.jpg"></a>
+                <p class="shopdis"><b>Fezi clothes Mens shop </b> <br> Location:Tirupati <br> <i
+                        class="fa-regular fa-star"></i>Rating 4.5+ <br> Time:25-30 mins</p>
+            </div>
+
+        </div>
+    </div>
+    <!-- close part two -->
+
+
+
+    <!-- part three open -->
+
+    <div class="list1">
+        <div class="matter">
+          <div id="topoffer">Today Top Offers Shops For You</div>
+            <div class="offerarrowmain">
+                <div class="offerarrowleft"> <i class="fa-solid fa-arrow-left"></i></div>
+                <div class="offerarrowright"><i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+        </div>
+        <div class="shopslist">
+            <div class="shop2"><a href="/">
+                    <div class="offmain"><img src="image/offershop1.jpg">
+                        <p class="off">60% OFF UPTO 200</p>
+                    </div>
+                </a>
+                <p class="shopdis1"><b>Branded Clothes Shop </b><br> Rating 5.0+</p>
+            </div>
+            <div class="shop2"><a href="/">
+                    <div class="offmain"><img src="image/offershop3.jpg">
+                        <p class="off">70% OFF UPTO 250</p>
+                    </div>
+                </a>
+                <p class="shopdis1"><b>Super Market Shop </b><br> Rating 4.5+</p>
+            </div>
+            <div class="shop2"><a href="/">
+                    <div class="offmain"><img src="image/offershop2.jpg">
+                        <p class="off">50% OFF UPTO 400</p>
+                    </div>
+                </a>
+                <p class="shopdis1"><b>Super Market Shop </b><br> Rating 4.0+</p>
+            </div>
+            <div class="shop2"><a href="/">
+                    <div class="offmain"><img src="image/offershop4.jpg">
+                        <p class="off">80% OFF UPTO 600</p>
+                    </div>
+                </a>
+                <p class="shopdis1"><b>Branded Shoes Shop </b><br> Rating 4.5+</p>
+            </div>
+            <div class="shop2"><a href="/">
+                    <div class="offmain"><img src="/image/offershop5.jpeg">
+                        <p class="off">30% OFF UPTO 100</p>
+                    </div>
+                </a>
+                <p class="shopdis1"><b>Restaurant Shop </b><br> Rating 5.0+</p>
+            </div>
+            <div class="shop2"><a href="/">
+                    <div class="offmain"><img src="image/offershop3.jpg">
+                        <p class="off">70% OFF UPTO 250</p>
+                    </div>
+                </a>
+                <p class="shopdis1"><b>Super Market Shop </b><br> Rating 4.5+</p>
+            </div>
+            <div class="shop2"><a href="/">
+                    <div class="offmain"><img src="image/offershop2.jpg">
+                        <p class="off">50% OFF UPTO 400</p>
+                    </div>
+                </a>
+                <p class="shopdis1"><b>Super Market Shop </b><br> Rating 4.0+</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- part four -->
+    <div class="exploremain">
+        <div class="explore">
+            <p>Explore By Categories</p>
+        </div>
+        <div class="navbar2">
+            <div class="filters dropdown1">
+                Filter <i class="fa-solid fa-arrow-down-wide-short"></i>
+                <ul class="dropdown-content1">
+                    <li>Filter Option 1</li>
+                    <li>Filter Option 2</li>
+                    <li>Filter Option 3</li>
+                    <li>Filter Option 4</li>
+                    <li>Filter Option 5</li>
+                </ul>
+            </div>
+            <div class="filters dropdown1">
+                Sort By <i class="fa-solid fa-sort"></i>
+                <ul class="dropdown-content1">
+                    <li>Sort Option 1</li>
+                    <li>Sort Option 2</li>
+                    <li>Sort Option 3</li>
+                    <li>Sort Option 4</li>
+                    <li>Sort Option 5</li>
+                </ul>
+            </div>
+            <div class="filters dropdown1">
+                Categories <i class="fa-solid fa-list"></i>
+                <ul class="dropdown-content1">
+                    <li>Category 1</li>
+                    <li>Category 2</li>
+                    <li>Category 3</li>
+                    <li>Category 4</li>
+                    <li>Category 5</li>
+                </ul>
+            </div>
+            <div class="filters dropdown1">
+                <i class="fa-regular fa-star"></i> Rating 4.0+
+            </div>
+            <div class="filters dropdown1">
+                Offers <i class="fa-brands fa-slack"></i>
+            </div>
+            <div class="filters dropdown1">
+                <i class="fa-regular fa-clock"></i> Time
+                <ul class="dropdown-content1">
+                    <li>Time Option 1</li>
+                    <li>Time Option 2</li>
+                    <li>Time Option 3</li>
+                    <li>Time Option 4</li>
+                    <li>Time Option 5</li>
+                </ul>
+            </div>
+            <div class="filters dropdown1">
+                <i class="fa-solid fa-money-check"></i> Shops Filter
+                <ul class="dropdown-content1">
+                    <li>Money Option 1</li>
+                    <li>Money Option 2</li>
+                    <li>Money Option 3</li>
+                    <li>Money Option 4</li>
+                    <li>Money Option 5</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="categories">
+
+            <div class="shopslist1">
+                <div class="shops3"><a href="shopprofile.html"><img src="image/mobilenew1.jpg"> </a>
+                    <p class="shopdis"><b>Fezi clothes Mens shop </b><br> Location:Tirupatii <br> <i
+                            class="fa-regular fa-star"></i>Rating 4.5+ <br> Time:25-30 mins</p>
+                </div>
+                <div class="shops3"><a href="/"><img src="image/clothes1.jpg"></a>
+                    <p class="shopdis"><b>Vision Express speds shop</b> <br> Location:Tirupati <br> <i
+                            class="fa-regular fa-star"></i>Rating 4.0+ <br> Time:20-30 mins</p>
+                </div>
+                <div class="shops3"><a href="/"><img src="image/clothes4.jpg"> </a>
+                    <p class="shopdis"><b>Lou & Grey Ladies Sarees shop</b> <br> Location:Tirupati <br> <i
+                            class="fa-regular fa-star"></i>Rating 4.5+ <br> Time:25-30 mins</p>
+                </div>
+                <div class="shops3"><a href="/"><img src="image/clothes2.jpg"> </a>
+                    <p class="shopdis"><b>Star Tissues All Model clothes </b><br> Location:Tirupati <br> <i
+                            class="fa-regular fa-star"></i>Rating 4.5+ <br> Time:25-30 mins</p>
+                </div>
+                <div class="shops3"><a href="/"><img src="image/food1.jpg"> </a>
+                    <p class="shopdis"><b>Vision Express speds shop</b> <br> Location:Tirupati <br> <i
+                            class="fa-regular fa-star"></i>Rating 4.0+ <br> Time:20-30 mins</p>
+                </div>
+                <div class="shops3"><a href="/"><img src="image/electric1.jpg"> </a>
+                    <p class="shopdis"><b>Vision Express speds shop </b><br> Location:Tirupati <br> <i
+                            class="fa-regular fa-star"></i>Rating 4.0+ <br> Time:20-30 mins</p>
+                </div>
+                <div class="shops3"><a href="/"><img src="image/market3.png"> </a>
+                    <p class="shopdis"><b>Vision Express speds shop</b> <br> Location:Tirupati <br> <i
+                            class="fa-regular fa-star"></i>Rating 4.0+ <br> Time:20-30 mins</p>
+                </div>
+                <div class="shops3"><a href="/"><img src="image/clothes3.jpg"> </a>
+                    <p class="shopdis"><b>Vision Express speds shop</b> <br> Location:Tirupati <br> <i
+                            class="fa-regular fa-star"></i>Rating 4.0+ <br> Time:20-30 mins</p>
+                </div>
+                <div class="shops3"><a href="/"><img src="image/food2.jpg"> </a>
+                    <p class="shopdis"><b>Vision Express speds shop</b> <br> Location:Tirupati <br> <i
+                            class="fa-regular fa-star"></i>Rating 4.0+ <br> Time:20-30 mins</p>
+                </div>
+                <div class="shops3"><a href="/"><img src="image/market1.jpg"></a>
+                    <p class="shopdis"><b>Vision Express speds shop</b> <br> Location:Tirupati <br> <i
+                            class="fa-regular fa-star"></i>Rating 4.0+ <br> Time:20-30 mins</p>
+                </div>
+                <div class="shops3"><a href="/"><img src="image/mobilenew3.jpeg"></a>
+                    <p class="shopdis"><b>Vision Express speds shop</b> <br> Location:Tirupati <br> <i
+                            class="fa-regular fa-star"></i>Rating 4.0+ <br> Time:20-30 mins</p>
+                </div>
+                <div class="shops3"><a href="/"><img src="image/food3.jpg"> </a>
+                    <p class="shopdis"><b>Vision Express speds shop</b> <br> Location:Tirupati <br> <i
+                            class="fa-regular fa-star"></i>Rating 4.0+ <br> Time:20-30 mins</p>
+                </div>
+                <div class="shops3"><a href="/"><img src="image/market2.jpeg"></a>
+                    <p class="shopdis"><b>Vision Express speds shop</b> <br> Location:Tirupati <br> <i
+                            class="fa-regular fa-star"></i>Rating 4.0+ <br> Time:20-30 mins</p>
+                </div>
+                <div class="shops3"><a href="/"><img src="image/food4.jpeg"></a>
+                    <p class="shopdis"><b>Vision Express speds shop</b> <br> Location:Tirupati <br> <i
+                            class="fa-regular fa-star"></i>Rating 4.0+ <br> Time:20-30 mins</p>
+                </div>
+                <div class="shops3"><a href="/"><img src="image/mobilenew2.PNG"></a>
+                    <p class="shopdis"><b>Vision Express speds shop</b> <br> Location:Tirupati <br> <i
+                            class="fa-regular fa-star"></i>Rating 4.0+ <br> Time:20-30 mins</p>
+                </div>
+                <div class="shops3"><a href="/"><img src="image/electric2.jpg"></a>
+                    <p class="shopdis"><b>Vision Express speds shop</b> <br> Location:Tirupati <br> <i
+                            class="fa-regular fa-star"></i>Rating 4.0+ <br> Time:20-30 mins</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- open five -->
+    <div class="bestshop2">
+        <p>Easily Find All Nearby Shops</p>
+    </div>
+    <div class="bestshop">
+        <div class="bestshop1">Find All Nearby Shops</div>
+        <div class="bestshop1">Easily Explore All Top rated Shops</div>
+    </div>
+
+
+
+    <!-- part six -->
+
+    <!-- How it Works -->
+    <div class="works">
+        <div class="work1">How it Works </div>
+        <div class="works2">
+            <div class="box4">
+                <h1>Step1</h1>
+                <img src="../image/Select.png" class="selectimg">
+                <p class="para">Open the app</p>
+                <p class="para1">->Please select the shop of your choice, whether it is in your location or anywhere
+                    else
+                    you prefer.</p>
+
+            </div>
+            <div class="box4">
+                <h1>Step2</h1>
+                <img src="image/Select.png" class="selectimg">
+                <p class="para">Open the app</p>
+                <p class="para1">->Please select the shop of your choice, whether it is in your location or anywhere
+                    else you prefer.
+                </p>
+
+            </div>
+
+
+            <div class="box4 extrabox">
+                <h1>Step3</h1>
+                <img src="image/Select.png" class="selectimg">
+                <p class="para">Open the app</p>
+                <p class="para1">->Please select the shop of your choice, whether it is in your location or anywhere
+                    else you prefer.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- open part seven -->
+    <hr>
+    <div class="footer">
+        <div class="boxes extrabox1">
+            <div class="extrabox2">
+                <h1><img src="image/company_logo_2-removebg-preview.png"></h1>
+                <h2>Smart Shopping</h2>
+            </div>
+            <p>@2026 To Start</p>
+            <p>Technologies Pvt. Ltd</p>
+        </div>
+        <div class="boxes extrabox3">
+            <p class="footerhead">Company</p>
+            <p>About</p>
+            <p>Careers</p>
+            <p>Team</p>
+            <p>new company</p>
+            <p>2026 launch</p>
+        </div>
+        <div class="boxes extrabox4">
+            <div class="extrachild1 ">
+                <p class="footerhead">Contact us</p>
+                <p> Help & Support</p>
+                <p> Partner with us</p>
+                <p> Ride with us</p>
+            </div>
+        </div>
+        <div class="boxes extrabox5">
+            <p class="footerhead"> We deliver to:</p>
+            <p>Bangalore</p>
+            <p>Madanapalli</p>
+            <p>Hyderabad</p>
+            <p>Tirupati</p>
+        </div>
+        <div class="boxes extrabox6">
+            <p>Downdload App</p>
+            <button class="playstore">Get it an playstore</button>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="javascipt/script.js"></script>
+    <script src="javascipt/searchcontainer.js"></script>
+
+</body>
+
+</html>
